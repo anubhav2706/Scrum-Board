@@ -4,6 +4,7 @@
 /build
 /.next
 /.turbo
+/apps/api/firebase-adminsdk.json
 
 # Logs
 logs
