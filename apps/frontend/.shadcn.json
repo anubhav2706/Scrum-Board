@@ -1,0 +1,12 @@
+{
+    "project": "frontend",
+    "components": "components/ui",
+    "utils": "lib/utils.ts",
+    "tailwind": "tailwind.config.js",
+    "tsx": true,
+    "aliases": {
+      "@/components": "./components",
+      "@/lib": "./lib"
+    }
+  }
+  

@@ -1,0 +1,32 @@
+{
+  "name": "issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run --prefix apps/api start:dev\" \"npm run --prefix apps/frontend dev\"",
+    "build": "npm run build --prefix apps/api && npm run build --prefix apps/frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "npm@9.6.7",
+  "workspaces": [
+    "apps/frontend",
+    "apps/api",
+    "packages/*"
+  ],
+  "dependencies": {
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "types": ["./packages/types/index.ts"]
+    }
+  }
+}
